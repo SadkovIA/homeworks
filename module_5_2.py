@@ -6,8 +6,10 @@ class House:
     def __len__(self):
         return self.number_of_floors  # Возвращает количество этажей
 
-    def info(self):
-        return f"Название: {self.name}, кол-во этажей: {self.number_of_floors}" # Возвращает строку с информацией о доме
+
+    def __str__(self):
+        return f"Название: {self.name}, кол-во этажей: {self.number_of_floors}"
+
 
     def go_to(self, new_floor):
         if new_floor < 1 or new_floor > self.number_of_floors:
@@ -27,8 +29,3 @@ print(h2)  # Выводит: Название: ЖК Акация, кол-во э
 # len
 print(len(h1))  # Выводит: 10
 print(len(h2))  # Выводит: 20
-
-
-# info
-print(h1.info())
-print(h2.info())

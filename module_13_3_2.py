@@ -7,7 +7,7 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
 
 
-API_TOKEN = '7881789445:AAHfdHdUPitdcoXyS68LrdtxTzif1ch85FI'  # Укажите ваш токен бота
+API_TOKEN = ''  # Укажите ваш токен бота
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
